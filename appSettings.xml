@@ -1,0 +1,32 @@
+<!DOCTYPE ASCIITerminalApplicationSettings>
+<ASCIITerminalApplicationSettings version="2.0">
+ <QuickLoadSlots>
+  <Slot file="C:/SmarAct/MCS/Programs/mcs_s.xml"/>
+  <Slot file=""/>
+  <Slot file=""/>
+  <Slot file=""/>
+  <Slot file=""/>
+  <Slot file=""/>
+  <Slot file=""/>
+  <Slot file=""/>
+ </QuickLoadSlots>
+ <PortConfiguration>
+  <ConnctionType connection="1"/>
+ </PortConfiguration>
+ <SerialOptions>
+  <BaudRates>
+   <Entry rate="9600"/>
+   <Entry rate="14400"/>
+   <Entry rate="19200"/>
+   <Entry rate="38400"/>
+   <Entry rate="57600"/>
+   <Entry rate="115200"/>
+  </BaudRates>
+  <SendInitialString send="1" string=":"/>
+  <SendTerminalString send="1" string="\012"/>
+  <ComPort baudRateIndex="0" portIndex="11"/>
+ </SerialOptions>
+ <NetworkConfiguration>
+  <Interface ip="192.168.127.254" port="4001"/>
+ </NetworkConfiguration>
+</ASCIITerminalApplicationSettings>

@@ -1,0 +1,19 @@
+<!DOCTYPE MCSrs232TestConfiguration>
+<MCSrs232TestConfiguration version="1.0">
+ <ShortCutButtons>
+  <Button name="GetPosition" textToSend="GP$0"/>
+  <Button name="Find Reference Up" textToSend="FRM$0,0,60000,0"/>
+  <Button name="Find Reference Down" textToSend="FRM$0,1,60000,0"/>
+  <Button name="Calibrate" textToSend="CS$0"/>
+  <Button name="Move 1mm" textToSend="MPA$0,1000000,60000"/>
+  <Button name="Move -1mm" textToSend="MPA$0,-1000000,60000"/>
+  <Button name="GetAngle" textToSend="GA$0"/>
+  <Button name="Move 5" textToSend="MAA$0,5000000,0,60000"/>
+  <Button name="Move -5" textToSend="MAA$0,355000000,-1,60000"/>
+  <Button name="Stop" textToSend="S$0"/>
+ </ShortCutButtons>
+ <DataInputs>
+  <Input defaultValue="0" sendAsBinary="0" maxValue="14" binaryFormat="0" shortCutToCall="0" callShortCut="0" hasSlider="1" name="Channel" minValue="0"/>
+  <Input defaultValue="10000" sendAsBinary="0" maxValue="18500" binaryFormat="0" shortCutToCall="0" callShortCut="0" hasSlider="1" name="Frequency" minValue="1"/>
+ </DataInputs>
+</MCSrs232TestConfiguration>
